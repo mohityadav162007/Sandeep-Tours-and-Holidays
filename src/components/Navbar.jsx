@@ -22,9 +22,7 @@ const Navbar = () => {
                     <a href="tel:+919111961561" className="nav-btn-call mobile-only">
                         <Phone size={18} /> <span>Call</span>
                     </a>
-                    <Link to="/booking" className="nav-btn-book desktop-only">
-                        Book Now
-                    </Link>
+
                 </div>
 
                 <div className="menu-icon" onClick={toggleMenu}>
@@ -44,9 +42,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link to="/tours" className={`nav-links ${isActive('/tours')}`} onClick={toggleMenu}>Tours</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/booking" className={`nav-links ${isActive('/booking')}`} onClick={toggleMenu}>Booking</Link>
-                    </li>
+
                     <li className="nav-item">
                         <Link to="/contact" className={`nav-links ${isActive('/contact')}`} onClick={toggleMenu}>Contact</Link>
                     </li>

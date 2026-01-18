@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import CarGallery from './pages/CarGallery';
-import Booking from './pages/Booking';
 import Tours from './pages/Tours';
 import Contact from './pages/Contact';
 import AdminLogin from './pages/AdminLogin';
@@ -17,12 +17,13 @@ const AppContent = () => {
 
   return (
     <div className="app-container">
+      <ScrollToTop />
       {!isAdminPage && <Navbar />}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<CarGallery />} />
-          <Route path="/booking" element={<Booking />} />
+
           <Route path="/tours" element={<Tours />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin/secret" element={<AdminLogin />} />

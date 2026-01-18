@@ -41,7 +41,7 @@ const Home = () => {
       <Hero />
 
       {/* 2. QUICK BOOKING CARD */}
-      <section className="container">
+      <section className="container" id="quick-booking">
         <QuickBooking />
       </section>
 
@@ -98,9 +98,14 @@ const Home = () => {
                 <div className="fleet-meta">
                   <Users size={16} /> {car.capacity} Passengers
                 </div>
-                <Link to={`/booking?type=car&id=${car.id}`} className="view-details-link">
-                  View Details <ArrowRight size={16} />
-                </Link>
+                <a
+                  href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name}. Please provide details.`)}`}
+                  className="view-details-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Now <ArrowRight size={16} />
+                </a>
               </div>
             </div>
           ))}
@@ -154,9 +159,14 @@ const Home = () => {
                     <Clock size={16} /> {tour.duration}
                   </div>
                   <p className="tour-desc-new">{tour.description}</p>
-                  <Link to={`/booking?type=tour&id=${tour.id}`} className="enquire-link">
-                    Enquire Now <ArrowRight size={16} />
-                  </Link>
+                  <a
+                    href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
+                    className="enquire-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book Now <ArrowRight size={16} />
+                  </a>
                 </div>
               </div>
             ))
@@ -225,7 +235,7 @@ const Home = () => {
           <h2>Ready to Start Your Journey?</h2>
           <p>Book your premium cab now and experience the difference with Sandeep Travels & Holidays.</p>
           <div className="flex-center gap-16 wrap">
-            <Link to="/booking" className="btn-accent btn-lg">Book a Cab Now</Link>
+            <a href="#quick-booking" className="btn-accent btn-lg">Book a Cab Now</a>
             <Link to="/contact" className="btn-glass btn-lg">Contact Sales</Link>
           </div>
         </motion.div>

@@ -42,9 +42,14 @@ const Tours = () => {
                   ))}
                 </div>
 
-                <Link to={`/booking?type=tour&id=${tour.id}`} className="btn-primary-underlined-link">
-                  Enquire Now <ArrowRight size={20} />
-                </Link>
+                <a
+                  href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
+                  className="btn-primary-underlined-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Now <ArrowRight size={20} />
+                </a>
               </div>
             </div>
           ))}

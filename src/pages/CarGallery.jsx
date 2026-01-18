@@ -71,9 +71,14 @@ const CarGallery = () => {
                 </div>
 
                 <div className="flex-between mt-20">
-                  <Link to={`/booking?type=car&id=${car.id}`} className="btn-primary btn-small">
+                  <a
+                    href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name} from the gallery. Please provide details.`)}`}
+                    className="btn-primary btn-small"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Book Now
-                  </Link>
+                  </a>
                   <button
                     onClick={() => openLightbox(car.images, 0)}
                     className="view-gallery-btn"
