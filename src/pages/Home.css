@@ -1,0 +1,492 @@
+.home-wrapper {
+    overflow-x: hidden;
+}
+
+.section-header {
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Highlights */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.highlight-card {
+    padding: 48px 32px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-ios-large);
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    background: white;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-icon {
+    width: 64px;
+    height: 64px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: var(--accent);
+}
+
+/* Horizontal Scroll Fleet */
+.horizontal-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 20px 0 48px;
+    scrollbar-width: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.car-preview-card {
+    min-width: 300px;
+    border-radius: var(--radius-ios-large);
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--glass-border);
+    transition: all 0.4s ease;
+}
+
+.car-preview-card:hover {
+    box-shadow: var(--glass-shadow);
+}
+
+.car-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.car-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.car-preview-card:hover .car-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.car-info {
+    padding: 24px;
+}
+
+.car-badges {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0 20px;
+}
+
+.view-all-card {
+    min-width: 220px;
+    border-radius: var(--radius-ios-large);
+    background: var(--primary);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.view-all-card:hover {
+    transform: scale(1.02);
+    background: #1e293b;
+}
+
+/* Tours Grid */
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.tour-preview-card {
+    position: relative;
+    height: 440px;
+    border-radius: var(--radius-ios-large);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tour-overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 32px;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.95));
+    color: white;
+}
+
+/* Steps Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+}
+
+.step-card {
+    padding: 40px;
+    border-radius: var(--radius-ios-large);
+}
+
+.step-number {
+    width: 56px;
+    height: 56px;
+    background: var(--primary);
+    color: white;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin: 0 auto 24px;
+    font-size: 22px;
+}
+
+/* Why Us */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.why-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    border-radius: var(--radius-pill);
+    background: white;
+    border: 1px solid var(--glass-border);
+    font-weight: 600;
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.testimonial-card {
+    padding: 40px;
+    border-radius: var(--radius-ios-large);
+}
+
+/* Final CTA */
+.final-cta-card {
+    padding: 80px 40px;
+    border-radius: 40px;
+    background: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .tours-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .final-cta-card {
+        padding: 60px 24px;
+        border-radius: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .final-cta-card {
+        padding: 40px 20px;
+    }
+
+    .horizontal-scroll {
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+}
+
+/* Existing styles preserved... appending new styles */
+
+.sub-heading {
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+.view-all-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: gap 0.3s ease;
+}
+
+.view-all-link:hover {
+    gap: 12px;
+    color: var(--primary);
+}
+
+/* Fleet Grid - Refined to match Image 0 */
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.fleet-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.fleet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.fleet-img-wrap {
+    height: 220px;
+    background: #f8fafc;
+    position: relative;
+    overflow: hidden;
+}
+
+.fleet-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.fleet-card:hover .fleet-img-wrap img {
+    transform: scale(1.08);
+}
+
+.car-type-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.fleet-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.fleet-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.fleet-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.view-details-link {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: gap 0.3s ease;
+}
+
+.view-details-link:hover {
+    gap: 10px;
+    color: var(--primary);
+}
+
+/* Tours Grid New - Refined to match image-centric design */
+.tours-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.tour-card-new {
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card-new:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.tour-img-wrap-new {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-img-wrap-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.tour-card-new:hover .tour-img-wrap-new img {
+    transform: scale(1.05);
+}
+
+.tour-overlay-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 24px;
+    color: white;
+    pointer-events: none;
+}
+
+.tour-overlay-gradient h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tour-loc {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.95;
+    color: white;
+}
+
+.tour-body-new {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tour-meta-new {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tour-desc-new {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.enquire-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    color: #1e293b;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+}
+
+.enquire-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 105px;
+    height: 2px;
+    background: #1e293b;
+}
+
+.enquire-link:hover {
+    gap: 12px;
+}
+
+
+.center-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+
+    .fleet-grid,
+    .tours-grid-new {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

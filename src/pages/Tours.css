@@ -1,0 +1,159 @@
+.tours-page {
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 32px;
+}
+
+.tour-card {
+    border-radius: 32px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: white;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+}
+
+.tour-image-wrap {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.tour-card:hover .tour-image-wrap img {
+    transform: scale(1.05);
+}
+
+.tour-overlay-top {
+    display: none;
+    /* Removed based on image */
+}
+
+.tour-overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    text-align: left;
+}
+
+.tour-overlay-bottom h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    color: white;
+    letter-spacing: -0.01em;
+}
+
+.tour-overlay-bottom .location-meta {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.95;
+    color: white;
+}
+
+.tour-info {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+/* Enquire Now Link - Matches Image exactly */
+.btn-primary-underlined-link {
+    background: transparent;
+    border: none;
+    color: #1e293b;
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.btn-primary-underlined-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 105px;
+    /* Only under the text */
+    height: 2px;
+    background: #1e293b;
+}
+
+.btn-primary-underlined-link:hover {
+    gap: 12px;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* Custom Tour CTA */
+.custom-tour-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    margin-top: 80px;
+    gap: 40px;
+}
+
+.cta-content h2 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: -0.04em;
+}
+
+@media (max-width: 960px) {
+    .custom-tour-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 48px 32px;
+    }
+}

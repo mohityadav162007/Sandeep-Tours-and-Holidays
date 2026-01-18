@@ -1,0 +1,162 @@
+.contact-page-container {
+    background: #f8fafc;
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+.contact-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Sidebar Info Cards */
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(5px);
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+    background: #eff6ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+}
+
+.info-details h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.info-details p,
+.info-details a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+/* WhatsApp CTA */
+.whatsapp-cta-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: #25d366;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-cta-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-icon-wrap {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Card */
+.contact-form-card {
+    padding: 50px;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-ios {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-contact label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-group-contact input,
+.form-group-contact textarea {
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 16px;
+    color: #1e293b;
+    transition: all 0.2s ease;
+}
+
+.form-group-contact input:focus,
+.form-group-contact textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+@media (max-width: 960px) {
+    .contact-main-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-page-container {
+        padding: 40px 16px;
+    }
+
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+
+    .contact-page-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}

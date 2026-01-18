@@ -1,0 +1,226 @@
+.booking-page-container {
+    background: #f8fafc;
+    min-height: 100vh;
+    padding: 100px 20px 80px;
+}
+
+.booking-card-main {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: var(--radius-ios-large);
+    padding: 64px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.booking-header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.booking-header p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.tabs-switcher {
+    display: flex;
+    padding: 8px;
+    border-radius: var(--radius-pill);
+    margin: 0 auto 56px;
+    background: #f1f5f9;
+    max-width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-pill);
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.tab-btn.active {
+    background: white;
+    color: var(--accent);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-section {
+    margin-bottom: 56px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.section-title h3 {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.step-count {
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 18px 20px;
+    border-radius: var(--radius-ios);
+    border: 1px solid #e2e8f0;
+    background: rgba(248, 250, 252, 0.8);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.full-width-btn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+/* Success Screen */
+.success-screen {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.success-icon-wrap {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.success-screen h2 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+
+.success-screen p {
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-bottom: 48px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.success-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .booking-page-container {
+        padding: 40px 16px;
+    }
+
+    .booking-card-main {
+        padding: 48px 24px;
+    }
+
+    .booking-header h1 {
+        font-size: 36px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    .success-actions {
+        flex-direction: column;
+    }
+
+    .success-screen h2 {
+        font-size: 32px;
+    }
+}

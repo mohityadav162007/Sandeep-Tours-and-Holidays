@@ -1,0 +1,69 @@
+.quick-booking-container {
+    position: relative;
+    z-index: 20;
+    margin-top: -60px;
+    /* Pull it into the hero section */
+    margin-bottom: 40px;
+}
+
+.quick-booking-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 24px;
+    border-radius: var(--radius-ios-large);
+    align-items: flex-end;
+}
+
+.booking-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 4px;
+}
+
+.booking-field input,
+.booking-field select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.booking-field input:focus,
+.booking-field select:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.booking-submit {
+    height: 48px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .quick-booking-container {
+        margin-top: -40px;
+        padding: 0 16px;
+    }
+
+    .quick-booking-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px;
+    }
+}
