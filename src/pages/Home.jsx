@@ -134,14 +134,14 @@ const Home = () => {
           <h2>Tour Packages</h2>
           <p className="sub-heading">Curated experiences for memorable journeys</p>
         </div>
-        <div className="tours-grid-new">
+        <div className="tours-carousel">
           {tours.length === 0 ? (
             <div className="empty-state glass full-row">
               <p>No tour packages available at the moment.</p>
             </div>
           ) : (
-            tours.slice(0, 3).map(tour => (
-              <div key={tour.id} className="tour-card-new">
+            tours.map(tour => (
+              <div key={tour.id} className="tour-card-new carousel-item">
                 <div className="tour-img-wrap-new">
                   <img src={tour.image} alt={tour.name} />
                   <div className="tour-overlay-gradient">

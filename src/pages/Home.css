@@ -490,3 +490,53 @@
         gap: 20px;
     }
 }
+/* Tours Carousel */
+.tours-carousel {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 20px 4px 48px; /* Extra bottom padding for shadow/hover */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    margin-top: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.tours-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel-item {
+    min-width: 340px;
+    max-width: 340px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+/* Ensure existing tour card styles work in carousel */
+.tour-card-new {
+    /* Existing styles are sufficient, just ensuring height/layout behavior */
+    height: auto; /* Allow content to dictate height, but usually fixed works better for alignment */
+    /* If cards have varying content height, we might want them to stretch */
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-body-new {
+    flex: 1; /* Pushes footer (enquire link) down if we had a fixed height, but we don't strictly */
+}
+
+@media (max-width: 640px) {
+    .tours-carousel {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        gap: 16px;
+    }
+    
+    .carousel-item {
+        min-width: 280px;
+        max-width: 280px;
+    }
+}
