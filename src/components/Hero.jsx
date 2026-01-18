@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const images = [
-    "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-    "https://th.bing.com/th/id/OIP.Cj0Pg-2Ao9hJ_ZmUC-UEvwHaEK?w=284&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
-    "https://th.bing.com/th/id/OIP.Lrx8EZamCD0MY-UJudiVygHaFi?w=266&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
-    "https://th.bing.com/th/id/OIP.4kxJ0E-QjJkiG87JA6QXpAHaE8?w=239&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
-    "https://th.bing.com/th/id/OIP.gS_raA5-_iiW5sr-hreN0gHaE8?w=194&h=150&c=6&o=5&dpr=1.4&pid=1.7",
-    "https://th.bing.com/th/id/OIP.RS6jj1myc2hoLx4Zj3FiJQHaFj?w=200&h=150&c=6&o=5&dpr=1.4&pid=1.7"
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735713/1143632_myuc3x.jpg",
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735713/1187093_davfhk.jpg",
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735713/1512992_lgsvvg.jpg",
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735712/Amazing_Scenery_Wallpaper_tr3dn3.jpg",
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768721292/qghowpk6belwvidlweas.jpg"
 ];
 
 const Hero = () => {
