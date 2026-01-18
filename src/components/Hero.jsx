@@ -7,7 +7,7 @@ const images = [
     "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735713/1187093_davfhk.jpg",
     "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735713/1512992_lgsvvg.jpg",
     "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768721292/qghowpk6belwvidlweas.jpg",
-    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768735712/Amazing_Scenery_Wallpaper_tr3dn3.jpg"
+    "https://res.cloudinary.com/dy9vdjxmm/image/upload/v1768736191/Amazing_Scenery_Wallpaper_tr3dn3.jpg"
 ];
 
 const Hero = () => {
