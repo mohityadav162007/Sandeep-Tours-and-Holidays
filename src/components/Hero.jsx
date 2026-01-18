@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const images = [
-    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80", // Travel/Road Trip
-    "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1920&q=80", // Car on road
-    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1920&q=80", // Friends/Travel
-    "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920&q=80", // Driving
-    "https://images.unsplash.com/photo-1503376763036-066120622c74?auto=format&fit=crop&w=1920&q=80", // Scenic road
-    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1920&q=80"  // Luxury car/Travel
+    "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://th.bing.com/th/id/OIP.Cj0Pg-2Ao9hJ_ZmUC-UEvwHaEK?w=284&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+    "https://th.bing.com/th/id/OIP.Lrx8EZamCD0MY-UJudiVygHaFi?w=266&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+    "https://th.bing.com/th/id/OIP.4kxJ0E-QjJkiG87JA6QXpAHaE8?w=239&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+    "https://th.bing.com/th/id/OIP.gS_raA5-_iiW5sr-hreN0gHaE8?w=194&h=150&c=6&o=5&dpr=1.4&pid=1.7",
+    "https://th.bing.com/th/id/OIP.RS6jj1myc2hoLx4Zj3FiJQHaFj?w=200&h=150&c=6&o=5&dpr=1.4&pid=1.7"
 ];
 
 const Hero = () => {
