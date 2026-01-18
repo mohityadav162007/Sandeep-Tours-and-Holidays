@@ -19,7 +19,7 @@ const Navbar = () => {
                 </Link>
 
                 <div className="nav-actions">
-                    <a href="tel:+919876543210" className="nav-btn-call mobile-only">
+                    <a href="tel:+919111961561" className="nav-btn-call mobile-only">
                         <Phone size={18} /> <span>Call</span>
                     </a>
                     <Link to="/booking" className="nav-btn-book desktop-only">

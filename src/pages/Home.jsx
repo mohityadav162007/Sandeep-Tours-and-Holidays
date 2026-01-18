@@ -85,9 +85,9 @@ const Home = () => {
             <Link to="/gallery" className="view-all-link">View All <ArrowRight size={18} /></Link>
           </div>
         </div>
-        <div className="fleet-grid">
-          {cars.slice(0, 4).map(car => (
-            <div key={car.id} className="fleet-card">
+        <div className="fleet-carousel">
+          {cars.map(car => (
+            <div key={car.id} className="fleet-card carousel-item">
               <div className="fleet-img-wrap">
                 {/* Badges could go here if needed */}
                 <span className="car-type-badge">{car.type || 'Sedan'}</span>
