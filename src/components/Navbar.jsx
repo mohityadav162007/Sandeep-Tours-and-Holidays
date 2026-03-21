@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="navbar glass">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    Sandeep <span>Travels</span>
+                    Sandeep <span>Tours & Holidays</span>
                 </Link>
 
                 <div className="nav-actions">

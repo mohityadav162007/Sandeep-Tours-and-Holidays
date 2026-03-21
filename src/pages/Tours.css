@@ -151,9 +151,47 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .tours-grid {
         grid-template-columns: 1fr !important;
-        gap: 20px;
+        gap: 24px;
+    }
+
+    .header-center h1 {
+        font-size: 32px;
+    }
+
+    .tour-image-wrap {
+        height: 240px;
+    }
+
+    .tour-overlay-bottom h3 {
+        font-size: 24px;
+    }
+
+    .tour-info {
+        padding: 24px;
+    }
+
+    .duration {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .custom-tour-cta {
+        padding: 32px 20px;
+        margin-top: 40px;
+    }
+
+    .cta-content h2 {
+        font-size: 28px;
     }
 }
 

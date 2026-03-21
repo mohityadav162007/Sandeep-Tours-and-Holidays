@@ -104,14 +104,18 @@ const CarGallery = () => {
           <button className="close-btn" onClick={closeLightbox}><X size={32} /></button>
 
           <div className="lightbox-content" onClick={e => e.stopPropagation()}>
-            <button className="nav-btn prev" onClick={prevImage}><ChevronLeft size={40} /></button>
+            <button className="nav-btn prev" onClick={prevImage} aria-label="Previous image">
+              <ChevronLeft size={48} />
+            </button>
             <div className="lightbox-image-container">
-              <img src={lightbox.images[lightbox.index]} alt="Large view" />
+              <img src={lightbox.images[lightbox.index]} alt={`Vehicle ${lightbox.index + 1}`} />
               <div className="lightbox-counter">
                 {lightbox.index + 1} / {lightbox.images.length}
               </div>
             </div>
-            <button className="nav-btn next" onClick={nextImage}><ChevronRight size={40} /></button>
+            <button className="nav-btn next" onClick={nextImage} aria-label="Next image">
+              <ChevronRight size={48} />
+            </button>
           </div>
         </div>
       )}

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer glass">
             <div className="container footer-grid">
                 <div className="footer-brand">
-                    <h2 className="footer-logo">Sandeep <span>Travels</span></h2>
+                    <h2 className="footer-logo">Sandeep <span>Tours & Holidays</span></h2>
                     <p>Premium cab and tour services for your next journey.</p>
                 </div>
 
@@ -16,7 +16,7 @@ const Footer = () => {
                     <h3>Quick Links</h3>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/gallery">Fleet</Link></li>
+                        <li><Link to="/gallery">Gallery</Link></li>
                         <li><Link to="/tours">Tours</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
