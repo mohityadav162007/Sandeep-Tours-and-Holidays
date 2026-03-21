@@ -79,6 +79,14 @@ body {
   text-align: center;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 /* Smooth Buttons (Capsule Shapes) */
 .btn-glass,
 .btn-primary,
@@ -184,7 +192,13 @@ body {
     font-size: 24px;
   }
 
+  .container {
+    padding: 0 16px;
+    /* tighter padding on mobile edges */
+  }
+
   .section-padding {
-    padding: 40px 0;
+    padding: 60px 0;
+    /* More breathing room than 40px */
   }
 }

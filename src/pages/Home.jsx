@@ -76,31 +76,28 @@ const Home = () => {
 
       {/* 4. CAR FLEET PREVIEW */}
       <section className="section-padding container">
-        <div className="section-header">
-          <div className="flex-between">
-            <div>
-              <h2>Our Fleet</h2>
-              <p className="sub-heading">Premium vehicles for every journey</p>
-            </div>
-            <Link to="/gallery" className="view-all-link">View All <ArrowRight size={18} /></Link>
-          </div>
+        <div className="section-header text-center">
+          <h2>Our Fleet</h2>
+          <p className="sub-heading">Premium vehicles for every journey</p>
         </div>
         <div className="fleet-carousel">
           {cars.map(car => (
-            <div key={car.id} className="fleet-card carousel-item">
-              <div className="fleet-img-wrap">
-                {/* Badges could go here if needed */}
-                <span className="car-type-badge">{car.type || 'Sedan'}</span>
+            <div key={car.id} className="fleet-card-new carousel-item">
+              <div className="fleet-img-wrap-new">
+                <span className="car-type-badge">{car.type || 'Premium'}</span>
                 <img src={car.images[0]} alt={car.name} />
-              </div>
-              <div className="fleet-info">
-                <h3>{car.name}</h3>
-                <div className="fleet-meta">
-                  <Users size={16} /> {car.capacity} Passengers
+                <div className="fleet-overlay-gradient">
+                  <h3>{car.name}</h3>
+                  <div className="fleet-meta-badge">
+                    <Users size={14} /> {car.capacity} Seats
+                  </div>
                 </div>
+              </div>
+              <div className="fleet-body-new">
+                <p className="fleet-desc-new">{car.description || "Enjoy a premium and comfortable ride with our top-class vehicles."}</p>
                 <a
                   href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name}. Please provide details.`)}`}
-                  className="view-details-link"
+                  className="enquire-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -109,6 +106,9 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="center-btn-wrap mt-40">
+          <Link to="/gallery" className="btn-primary">View All Fleet <ArrowRight size={16} /></Link>
         </div>
       </section>
 

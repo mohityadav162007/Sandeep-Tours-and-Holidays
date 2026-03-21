@@ -138,25 +138,44 @@
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     .contact-main-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 0 10px;
+        gap: 32px;
     }
-}
 
-@media (max-width: 640px) {
     .contact-page-container {
-        padding: 40px 16px;
+        padding: 40px 0;
+        /* Container padding handled by .container */
+    }
+
+    .contact-sidebar {
+        gap: 16px;
+    }
+
+    .info-card {
+        padding: 20px;
+        gap: 16px;
     }
 
     .contact-form-card {
-        padding: 30px 20px;
+        padding: 32px 20px;
+        border-radius: var(--radius-ios-large);
+    }
+
+    .contact-form-ios {
+        gap: 20px;
+    }
+
+    .form-group-contact input,
+    .form-group-contact textarea {
+        padding: 16px;
+        font-size: 16px;
+        /* Prevents iOS auto-zoom */
     }
 
     .contact-page-container h1 {
         font-size: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 }

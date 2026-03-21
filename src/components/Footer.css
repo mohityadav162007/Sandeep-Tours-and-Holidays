@@ -56,13 +56,26 @@
 }
 
 @media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
+    .footer {
+        padding: 60px 0 40px;
+        margin-top: 40px;
     }
 
-    .footer {
-        padding-top: 40px;
-        margin-top: 40px;
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin-inline: auto;
+    }
+
+    .footer ul li {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        padding: 32px 0;
     }
 }

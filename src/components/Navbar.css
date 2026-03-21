@@ -101,15 +101,17 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 300px;
+    width: 280px;
     height: calc(100vh - 40px);
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
+    /* Slightly darker for better contrast */
     backdrop-filter: blur(32px) saturate(180%);
     -webkit-backdrop-filter: blur(32px) saturate(180%);
     display: flex;
     flex-direction: column;
-    padding: 80px 40px;
-    gap: 24px;
+    padding: 80px 24px;
+    /* Reduced from 40px to 24px for smaller screens */
+    gap: 20px;
     transform: translateX(120%);
     transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     z-index: 1001;

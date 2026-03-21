@@ -14,11 +14,7 @@
     letter-spacing: -0.03em;
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+
 
 /* Highlights */
 .highlights-grid {
@@ -203,16 +199,101 @@
     border-radius: var(--radius-ios-large);
 }
 
-/* Final CTA */
+/* Final CTA - Redesigned */
 .final-cta-card {
-    padding: 80px 40px;
+    position: relative;
+    padding: 100px 40px;
     border-radius: 40px;
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+    color: white;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Background Glow Effect */
+.final-cta-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.final-cta-card h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: -0.04em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta-card p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+}
+
+/* Utility classes specifically for the CTA layout */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Enhance CTA Buttons */
+.final-cta-card .btn-lg {
+    padding: 18px 40px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.final-cta-card .btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.final-cta-card .btn-glass:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta-card .btn-accent {
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+}
+
+.final-cta-card .btn-accent:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
 }
 
 @media (max-width: 768px) {
     .section-header h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .tours-grid {
@@ -223,20 +304,39 @@
         padding: 60px 24px;
         border-radius: 32px;
     }
-}
 
-@media (max-width: 768px) {
-    .section-header h2 {
-        font-size: 24px;
+    .final-cta-card h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
     }
 
-    .final-cta-card {
-        padding: 40px 20px;
+    .final-cta-card p {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .final-cta-card .btn-lg {
+        width: 100%;
     }
 
     .horizontal-scroll {
-        margin-right: -20px;
-        padding-right: 20px;
+        margin-right: -16px;
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .car-preview-card {
+        scroll-snap-align: start;
+    }
+
+    .steps-grid {
+        gap: 32px;
+    }
+
+    .highlights-grid {
+        gap: 20px;
     }
 }
 
@@ -248,60 +348,46 @@
     margin-top: -8px;
 }
 
-.view-all-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    color: var(--text-primary);
-    transition: gap 0.3s ease;
-}
 
-.view-all-link:hover {
-    gap: 12px;
-    color: var(--primary);
-}
 
 /* Fleet Grid - Refined to match Image 0 */
 .fleet-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
     margin-top: 32px;
 }
 
-.fleet-card {
+.fleet-card-new {
     background: white;
-    border-radius: 20px;
+    border-radius: 32px;
     overflow: hidden;
-    border: 1px solid var(--glass-border);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.fleet-card:hover {
+.fleet-card-new:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
-.fleet-img-wrap {
-    height: 220px;
-    background: #f8fafc;
+.fleet-img-wrap-new {
+    height: 240px;
     position: relative;
     overflow: hidden;
 }
 
-.fleet-img-wrap img {
+.fleet-img-wrap-new img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.fleet-card:hover .fleet-img-wrap img {
-    transform: scale(1.08);
+.fleet-card-new:hover .fleet-img-wrap-new img {
+    transform: scale(1.05);
 }
 
 .car-type-badge {
@@ -309,52 +395,77 @@
     top: 16px;
     right: 16px;
     background: white;
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     z-index: 2;
     text-transform: capitalize;
+    color: var(--primary);
 }
 
-.fleet-info {
+.fleet-overlay-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.85), transparent);
     padding: 24px;
+    color: white;
+    pointer-events: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    flex: 1;
+    justify-content: flex-end;
 }
 
-.fleet-info h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-primary);
+.fleet-overlay-gradient h3 {
+    font-size: 26px;
+    font-weight: 800;
     margin: 0;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: normal;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.fleet-meta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--text-secondary);
-    font-size: 14px;
-}
-
-.view-details-link {
-    margin-top: auto;
-    display: flex;
+.fleet-meta-badge {
+    display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-weight: 600;
-    color: var(--text-primary);
     font-size: 15px;
-    transition: gap 0.3s ease;
+    font-weight: 600;
+    opacity: 0.95;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    width: fit-content;
 }
 
-.view-details-link:hover {
-    gap: 10px;
-    color: var(--primary);
+.fleet-body-new {
+    padding: 24px 32px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fleet-desc-new {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Tours Grid New - Refined to match image-centric design */
@@ -445,6 +556,7 @@
     margin-bottom: 8px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -538,10 +650,10 @@
 
     .tours-carousel,
     .fleet-carousel {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: -20px;
-        margin-right: -20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: -16px;
+        margin-right: -16px;
         gap: 16px;
     }
 
