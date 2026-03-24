@@ -100,7 +100,7 @@ const Booking = () => {
                   <CheckCircle size={100} color="var(--success)" strokeWidth={1} />
                 </div>
                 <h2>Booking Received!</h2>
-                <p>Thank you for choosing Sandeep Travels & Holidays. Our team will contact you shortly to confirm your trip details.</p>
+                <p>Thank you for choosing Sandeep Tours & Holidays. Our team will contact you shortly to confirm your trip details.</p>
                 <div className="success-actions">
                   <button onClick={resetForm} className="btn-primary">Make Another Booking</button>
                   <button onClick={() => navigate('/')} className="btn-glass">Back to Home</button>

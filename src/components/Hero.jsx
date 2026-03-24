@@ -28,8 +28,10 @@ const Hero = () => {
                     <img
                         key={index}
                         src={image}
-                        alt={`Hero Slide ${index + 1}`}
+                        alt={`Sandeep Tours & Holidays - Travel Experience ${index + 1}`}
+                        title="Experience premium travel with us"
                         className={`hero-slide ${index === currentImageIndex ? 'active' : ''}`}
+                        loading={index === 0 ? "eager" : "lazy"}
                     />
                 ))}
                 <div className="hero-overlay"></div>
@@ -38,7 +40,7 @@ const Hero = () => {
             <div className="hero-content container animate-fade-in">
                 <h1 className="hero-title">Sandeep Tours & Holidays</h1>
                 <p className="hero-subtitle">Local • Outstation • Tour Packages</p>
-                <div className="hero-actions">
+                <div className="hero-buttons">
                     <Link to="/booking" className="btn-glass btn-primary">Book a Cab</Link>
                     <Link to="/gallery" className="btn-glass">View Cars</Link>
                 </div>

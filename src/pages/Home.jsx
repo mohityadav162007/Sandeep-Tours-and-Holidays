@@ -15,6 +15,7 @@ import {
 import Hero from '../components/Hero';
 import QuickBooking from '../components/QuickBooking';
 import GlassCard from '../components/ui/GlassCard';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
@@ -37,6 +38,11 @@ const Home = () => {
 
   return (
     <div className="home-wrapper">
+      <SEO
+        title="Sandeep Tours & Holidays | Best Travel Agency in India"
+        description="Explore incredible tour packages and premium car rentals with Sandeep Tours & Holidays. Your trusted travel partner for memorable journeys across India."
+        keywords="tours and travels, travel agency India, tour packages, luxury car rental, Sandeep Tours, holiday packages"
+      />
       {/* 1. HERO SECTION */}
       <Hero />
 
@@ -85,7 +91,7 @@ const Home = () => {
             <div key={car.id} className="fleet-card-new carousel-item">
               <div className="fleet-img-wrap-new">
                 <span className="car-type-badge">{car.type || 'Premium'}</span>
-                <img src={car.images[0]} alt={car.name} />
+                <img src={car.images[0]} alt={`${car.name} - ${car.type || 'Premium'} Cab`} title={car.name} loading="lazy" />
                 <div className="fleet-overlay-gradient">
                   <h3>{car.name}</h3>
                   <div className="fleet-meta-badge">
@@ -148,7 +154,7 @@ const Home = () => {
             tours.map(tour => (
               <div key={tour.id} className="tour-card-new carousel-item">
                 <div className="tour-img-wrap-new">
-                  <img src={tour.image} alt={tour.name} />
+                  <img src={tour.image} alt={`${tour.name} - ${tour.destination}`} title={tour.name} loading="lazy" />
                   <div className="tour-overlay-gradient">
                     <h3>{tour.name}</h3>
                     <span className="tour-loc">{tour.destination}</span>
@@ -180,7 +186,7 @@ const Home = () => {
       {/* 7. WHY CHOOSE US */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Why Choose Sandeep Travels?</h2>
+          <h2>Why Choose Sandeep Tours & Holidays?</h2>
           <p>The preferred choice for seamless travel across Central India.</p>
         </div>
         <div className="why-grid">
@@ -233,7 +239,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <h2>Ready to Start Your Journey?</h2>
-          <p>Book your premium cab now and experience the difference with Sandeep Travels & Holidays.</p>
+          <p>Book your premium cab now and experience the difference with Sandeep Tours & Holidays.</p>
           <div className="flex-center gap-16 wrap">
             <a href="#quick-booking" className="btn-accent btn-lg">Book a Cab Now</a>
             <Link to="/contact" className="btn-glass btn-lg">Contact Sales</Link>

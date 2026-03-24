@@ -2,6 +2,7 @@ import React from 'react';
 import { useData } from '../context/DataContext';
 import { Link } from 'react-router-dom';
 import { Clock, MapPin, Sparkles, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import './Tours.css';
 
 const Tours = () => {
@@ -9,6 +10,11 @@ const Tours = () => {
 
   return (
     <div className="tours-page">
+      <SEO
+        title="Exclusive Tour Packages | Sandeep Tours & Holidays"
+        description="Discover our handpicked tour packages. From religious pilgrimages to scenic escapes, we offer personalized travel experiences tailored to your needs."
+        keywords="tour packages, India tours, holiday planning, travel deals, family tours, religious tours India"
+      />
       <div className="container section-padding">
         <div className="header-center animate-fade-in">
           <h1>Exclusive Tour Packages</h1>
@@ -19,7 +25,7 @@ const Tours = () => {
           {tours.map(tour => (
             <div key={tour.id} className="tour-card animate-fade-in">
               <div className="tour-image-wrap">
-                <img src={tour.image} alt={tour.name} />
+                <img src={tour.image} alt={`${tour.name} - Explore ${tour.destination}`} title={tour.name} loading="lazy" />
                 <div className="tour-overlay-top">
                   <span className="price-badge">Featured</span>
                 </div>

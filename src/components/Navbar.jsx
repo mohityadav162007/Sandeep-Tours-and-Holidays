@@ -18,12 +18,6 @@ const Navbar = () => {
                     Sandeep <span>Tours & Holidays</span>
                 </Link>
 
-                <div className="nav-actions">
-                    <a href="tel:+919111961561" className="nav-btn-call mobile-only">
-                        <Phone size={18} /> <span>Call</span>
-                    </a>
-
-                </div>
 
                 <div className="menu-icon" onClick={toggleMenu}>
                     {isOpen ? <X size={28} /> : <Menu size={28} />}

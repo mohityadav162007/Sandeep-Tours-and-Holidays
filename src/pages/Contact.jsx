@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageCircle, CheckCircle } from 'lucide-react';
 import { useData } from '../context/DataContext';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact = () => {
@@ -25,6 +25,11 @@ const Contact = () => {
 
   return (
     <div className="contact-page-container">
+      <SEO
+        title="Contact Us | Sandeep Tours & Holidays"
+        description="Get in touch with Sandeep Tours & Holidays for bookings, inquiries, and personalized travel planning. We're here to help you 24/7 with your travel needs."
+        keywords="contact travel agency, book cab, travel inquiry, Sandeep Tours contact, travel support"
+      />
       <div className="container section-padding">
         <div className="header-center animate-fade-in">
           <h1>Contact Us</h1>
