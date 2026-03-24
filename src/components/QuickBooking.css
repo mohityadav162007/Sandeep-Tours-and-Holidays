@@ -2,7 +2,6 @@
     position: relative;
     z-index: 20;
     margin-top: -60px;
-    /* Pull it into the hero section */
     margin-bottom: 40px;
 }
 
@@ -56,6 +55,106 @@
     white-space: nowrap;
 }
 
+/* Modal Styles */
+.booking-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.booking-modal-card {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 32px;
+    position: relative;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #f1f5f9;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: #e2e8f0;
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    margin-bottom: 32px;
+}
+
+.modal-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.modal-header p {
+    color: var(--text-secondary);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-field label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-field input,
+.modal-field textarea {
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.modal-field input:focus,
+.modal-field textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(30, 41, 59, 0.05);
+}
+
 @media (max-width: 768px) {
     .quick-booking-container {
         margin-top: -40px;
@@ -66,12 +165,13 @@
         grid-template-columns: 1fr;
         gap: 16px;
         padding: 24px 20px;
-        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.05);
     }
 
-    .booking-field input,
-    .booking-field select {
-        padding: 14px 16px;
-        font-size: 16px;
+    .booking-modal-card {
+        padding: 32px 24px;
+    }
+
+    .modal-header h2 {
+        font-size: 24px;
     }
 }

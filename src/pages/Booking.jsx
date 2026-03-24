@@ -17,17 +17,17 @@ const Booking = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [formData, setFormData] = useState({
-    customer_name: '',
-    customer_phone: '',
+    customer_name: searchParams.get('name') || '',
+    customer_phone: searchParams.get('phone') || '',
     customer_email: '',
     pickup_location: searchParams.get('pickup') || '',
     drop_location: searchParams.get('drop') || '',
     travel_date: searchParams.get('date') || '',
-    travel_time: '',
-    car_type: idParam && typeParam === 'cab' ? idParam : '',
+    travel_time: searchParams.get('time') || '',
+    car_type: idParam && typeParam === 'cab' ? idParam : (searchParams.get('cab') || ''),
     tour_id: idParam && typeParam === 'tour' ? idParam : '',
     passengers: 1,
-    special_requests: ''
+    special_requests: searchParams.get('details') || ''
   });
 
   useEffect(() => {

@@ -261,7 +261,14 @@ const Home = () => {
           <h2>Ready to Start Your Journey?</h2>
           <p>Book your premium cab now and experience the difference with Sandeep Tours & Holidays.</p>
           <div className="flex-center gap-16 wrap">
-            <a href="#quick-booking" className="btn-accent btn-lg">Book a Cab Now</a>
+            <a
+              href={`https://wa.me/9111961561?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
+              className="btn-accent btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a Cab Now
+            </a>
             <Link to="/contact" className="btn-glass btn-lg">Contact Sales</Link>
           </div>
         </motion.div>

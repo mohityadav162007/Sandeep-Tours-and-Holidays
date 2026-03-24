@@ -41,7 +41,14 @@ const Hero = () => {
                 <h1 className="hero-title">Best Tour Packages in India | Sandeep Tours & Holidays</h1>
                 <p className="hero-subtitle">Local • Outstation • Tour Packages</p>
                 <div className="hero-buttons">
-                    <Link to="/booking" className="btn-glass btn-primary">Book a Cab</Link>
+                    <a
+                        href={`https://wa.me/9111961561?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
+                        className="btn-glass btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Book a Cab
+                    </a>
                     <Link to="/gallery" className="btn-glass">View Cars</Link>
                 </div>
             </div>
