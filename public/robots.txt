@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/secret
+Disallow: /admin/dashboard
+
+# Sitemaps
+Sitemap: https://sandeeptoursandholidays.xyz/sitemap.xml
