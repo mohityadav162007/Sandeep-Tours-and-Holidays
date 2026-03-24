@@ -25,7 +25,7 @@ const Tours = () => {
           {tours.map(tour => (
             <div key={tour.id} className="tour-card animate-fade-in">
               <div className="tour-image-wrap">
-                <img src={tour.image} alt={`${tour.name} - Explore ${tour.destination}`} title={tour.name} loading="lazy" />
+                <img src={tour.image} alt={`${tour.destination} ${tour.name} tour package India holiday`} title={tour.name} loading="lazy" />
                 <div className="tour-overlay-top">
                   <span className="price-badge">Featured</span>
                 </div>

@@ -39,10 +39,30 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <SEO
-        title="Sandeep Tours & Holidays | Best Travel Agency in India"
-        description="Explore incredible tour packages and premium car rentals with Sandeep Tours & Holidays. Your trusted travel partner for memorable journeys across India."
-        keywords="tours and travels, travel agency India, tour packages, luxury car rental, Sandeep Tours, holiday packages"
+        title="Best Tour Packages in India | Sandeep Tours and Holidays"
+        description="Book affordable and premium tour packages across India with Sandeep Tours and Holidays. Trusted travel services with best prices."
+        keywords="tours and travels, travel agency India, tour packages, luxury car rental, Sandeep Tours, holiday packages, Tour Packages in India"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "TravelAgency",
+          "name": "Sandeep Tours and Holidays",
+          "url": "https://sandeeptoursandholidays.xyz/",
+          "telephone": "+91 9111961561",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Vijay Nagar",
+            "addressLocality": "Indore",
+            "addressRegion": "Madhya Pradesh",
+            "postalCode": "452010",
+            "addressCountry": "IN"
+          },
+          "areaServed": "India",
+          "description": "Best Tour Packages in India. Affordable and premium travel services."
+        })}
+      </script>
       {/* 1. HERO SECTION */}
       <Hero />
 
@@ -54,7 +74,7 @@ const Home = () => {
       {/* 3. SERVICE HIGHLIGHTS */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Premium Services</h2>
+          <h2>Tour Packages in India</h2>
           <p>We provide the best-in-class travel experience for you.</p>
         </div>
         <motion.div
@@ -83,15 +103,15 @@ const Home = () => {
       {/* 4. CAR FLEET PREVIEW */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Our Fleet</h2>
-          <p className="sub-heading">Premium vehicles for every journey</p>
+          <h2>Our Tour Packages</h2>
+          <p className="sub-heading">Premium vehicles and curated experiences for every journey</p>
         </div>
         <div className="fleet-carousel">
           {cars.map(car => (
             <div key={car.id} className="fleet-card-new carousel-item">
               <div className="fleet-img-wrap-new">
                 <span className="car-type-badge">{car.type || 'Premium'}</span>
-                <img src={car.images[0]} alt={`${car.name} - ${car.type || 'Premium'} Cab`} title={car.name} loading="lazy" />
+                <img src={car.images[0]} alt={`${car.name} ${car.type || 'Premium'} tour package India`} title={car.name} loading="lazy" />
                 <div className="fleet-overlay-gradient">
                   <h3>{car.name}</h3>
                   <div className="fleet-meta-badge">
@@ -142,8 +162,8 @@ const Home = () => {
       {/* 5. TOUR PACKAGES PREVIEW */}
       <section className="section-padding container bg-offset">
         <div className="section-header text-center">
-          <h2>Tour Packages</h2>
-          <p className="sub-heading">Curated experiences for memorable journeys</p>
+          <h2>Popular Destinations</h2>
+          <p className="sub-heading">Curated experiences for memorable journeys across India</p>
         </div>
         <div className="tours-carousel">
           {tours.length === 0 ? (
@@ -154,7 +174,7 @@ const Home = () => {
             tours.map(tour => (
               <div key={tour.id} className="tour-card-new carousel-item">
                 <div className="tour-img-wrap-new">
-                  <img src={tour.image} alt={`${tour.name} - ${tour.destination}`} title={tour.name} loading="lazy" />
+                  <img src={tour.image} alt={`${tour.destination} ${tour.name} tour package India holiday`} title={tour.name} loading="lazy" />
                   <div className="tour-overlay-gradient">
                     <h3>{tour.name}</h3>
                     <span className="tour-loc">{tour.destination}</span>
@@ -186,8 +206,8 @@ const Home = () => {
       {/* 7. WHY CHOOSE US */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Why Choose Sandeep Tours & Holidays?</h2>
-          <p>The preferred choice for seamless travel across Central India.</p>
+          <h2>Why Choose Us</h2>
+          <p>The preferred choice for seamless travel packages in India.</p>
         </div>
         <div className="why-grid">
           {[

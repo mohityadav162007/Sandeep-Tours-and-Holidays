@@ -338,6 +338,25 @@
     .highlights-grid {
         gap: 20px;
     }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+        line-height: 1.2;
+    }
+
+    .btn-lg {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
 }
 
 /* Existing styles preserved... appending new styles */

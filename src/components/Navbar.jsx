@@ -31,10 +31,10 @@ const Navbar = () => {
                         <Link to="/" className={`nav-links ${isActive('/')}`} onClick={toggleMenu}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/gallery" className={`nav-links ${isActive('/gallery')}`} onClick={toggleMenu}>Gallery</Link>
+                        <Link to="/gallery" className={`nav-links ${isActive('/gallery')}`} onClick={toggleMenu}>Tour Fleet</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/tours" className={`nav-links ${isActive('/tours')}`} onClick={toggleMenu}>Tours</Link>
+                        <Link to="/tours" className={`nav-links ${isActive('/tours')}`} onClick={toggleMenu}>India Tour Packages</Link>
                     </li>
 
                     <li className="nav-item">

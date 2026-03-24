@@ -16,18 +16,18 @@ const Footer = () => {
                     <h3>Quick Links</h3>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/gallery">Gallery</Link></li>
-                        <li><Link to="/tours">Tours</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/gallery">Premium Tour Fleet</Link></li>
+                        <li><Link to="/tours">Best India Tour Packages</Link></li>
+                        <li><Link to="/contact">Contact Travel Expert</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-contact">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li><Phone size={16} /> +91 98765 43210</li>
-                        <li><MessageCircle size={16} /> +91 98765 43210</li>
-                        <li><Mail size={16} /> info@sandeeptravels.com</li>
+                        <li><Phone size={16} /> +91 9111961561</li>
+                        <li><MessageCircle size={16} /> +91 9111961561</li>
+                        <li><Mail size={16} /> info@sandeeptoursandholidays.xyz</li>
                         <li><MapPin size={16} /> Vijay Nagar, Indore</li>
                     </ul>
                 </div>

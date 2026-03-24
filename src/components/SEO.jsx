@@ -37,6 +37,15 @@ const SEO = ({ title, description, keywords, url, image }) => {
         const twitterDescription = document.querySelector('meta[property="twitter:description"]');
         if (twitterDescription) twitterDescription.setAttribute('content', description);
 
+        // Update Canonical Tag
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+        }
+        canonical.setAttribute('href', url || window.location.href);
+
     }, [title, description, keywords, url, image]);
 
     return null;

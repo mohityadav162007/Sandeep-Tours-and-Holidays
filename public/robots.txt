@@ -6,5 +6,7 @@ Disallow: /admin/
 Disallow: /admin/secret
 Disallow: /admin/dashboard
 
+Sitemap: https://sandeeptoursandholidays.xyz/sitemap.xml
+
 # Sitemaps
 Sitemap: https://sandeeptoursandholidays.xyz/sitemap.xml

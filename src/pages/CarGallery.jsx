@@ -63,7 +63,7 @@ const CarGallery = () => {
             <div key={car.id} className="fleet-card animate-fade-in">
               <div className="fleet-img-wrap">
                 <span className="car-type-badge">{car.type || 'Premium'}</span>
-                <img src={car.images[0]} alt={`${car.name} - ${car.type || 'Premium'} Car`} title={car.name} loading="lazy" />
+                <img src={car.images[0]} alt={`${car.name} ${car.type || 'Premium'} tour package India`} title={`${car.name} available for India tours`} loading="lazy" />
               </div>
 
               <div className="fleet-info">
@@ -80,7 +80,7 @@ const CarGallery = () => {
                       className="mini-img-wrap"
                       onClick={() => openLightbox(car.images, idx)}
                     >
-                      <img src={img} alt={`${car.name} details - view ${idx + 1}`} title="View enlargement" loading="lazy" />
+                      <img src={img} alt={`${car.name} interior - ${car.type || 'Premium'} tour package India view ${idx + 1}`} title="View enlargement" loading="lazy" />
                       {idx === 3 && car.images.length > 4 && (
                         <div className="more-overlay">+{car.images.length - 4}</div>
                       )}

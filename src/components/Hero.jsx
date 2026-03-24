@@ -28,8 +28,8 @@ const Hero = () => {
                     <img
                         key={index}
                         src={image}
-                        alt={`Sandeep Tours & Holidays - Travel Experience ${index + 1}`}
-                        title="Experience premium travel with us"
+                        alt={`Sandeep Tours & Holidays - Best Tour Packages in India Experience ${index + 1}`}
+                        title="Book premium tour packages in India"
                         className={`hero-slide ${index === currentImageIndex ? 'active' : ''}`}
                         loading={index === 0 ? "eager" : "lazy"}
                     />
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-content container animate-fade-in">
-                <h1 className="hero-title">Sandeep Tours & Holidays</h1>
+                <h1 className="hero-title">Best Tour Packages in India | Sandeep Tours & Holidays</h1>
                 <p className="hero-subtitle">Local • Outstation • Tour Packages</p>
                 <div className="hero-buttons">
                     <Link to="/booking" className="btn-glass btn-primary">Book a Cab</Link>

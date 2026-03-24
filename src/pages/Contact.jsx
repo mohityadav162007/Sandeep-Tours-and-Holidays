@@ -19,7 +19,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Phone, title: 'Call Us', value: '+91 9111961561', link: 'tel:+919111961561' },
-    { icon: Mail, title: 'Email', value: 'info@sandeeptravels.com', link: 'mailto:info@sandeeptravels.com' },
+    { icon: Mail, title: 'Email', value: 'info@sandeeptoursandholidays.xyz', link: 'mailto:info@sandeeptoursandholidays.xyz' },
     { icon: MapPin, title: 'Office', value: 'Vijay Nagar, Indore', link: null }
   ];
 
