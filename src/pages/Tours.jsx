@@ -11,9 +11,9 @@ const Tours = () => {
   return (
     <div className="tours-page">
       <SEO
-        title="Exclusive Tour Packages | Sandeep Tours & Holidays"
-        description="Discover our handpicked tour packages. From religious pilgrimages to scenic escapes, we offer personalized travel experiences tailored to your needs."
-        keywords="tour packages, India tours, holiday planning, travel deals, family tours, religious tours India"
+        title="Best Tour Packages & Travel Agent in Indore | Sandeep Tours"
+        description="Book exclusive tour packages with the most trusted travel agent in Indore. Personalized journeys across India with Sandeep Tours and Holidays."
+        keywords="travel agent in Indore, tour packages Indore, holiday planning, travel deals Indore, family tours Indore"
       />
       <div className="container section-padding">
         <div className="header-center animate-fade-in">

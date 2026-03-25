@@ -39,9 +39,9 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <SEO
-        title="Best Tour Packages in India | Sandeep Tours and Holidays"
-        description="Book affordable and premium tour packages across India with Sandeep Tours and Holidays. Trusted travel services with best prices."
-        keywords="tours and travels, travel agency India, tour packages, luxury car rental, Sandeep Tours, holiday packages, Tour Packages in India"
+        title="Best Tours and Travels in Indore | Sandeep Tours and Holidays"
+        description="Sandeep Tours and Holidays is the top-rated travel agent in Indore. We offer premium tour packages, luxury car rentals, and tempo traveller in Indore for all your travel needs."
+        keywords="tours and travels in Indore, travel agent in Indore, tempo traveller in Indore, best tour packages India, car rental Indore, holiday packages Indore"
       />
       {/* Schema Markup */}
       <script type="application/ld+json">
@@ -59,8 +59,8 @@ const Home = () => {
             "postalCode": "452010",
             "addressCountry": "IN"
           },
-          "areaServed": "India",
-          "description": "Best Tour Packages in India. Affordable and premium travel services."
+          "areaServed": "Indore, Madhya Pradesh, India",
+          "description": "Sandeep Tours and Holidays is the best Tours and Travels in Indore. We provide premium tempo traveller in Indore, car rentals, and travel agent services."
         })}
       </script>
       {/* 1. HERO SECTION */}
@@ -74,8 +74,8 @@ const Home = () => {
       {/* 3. SERVICE HIGHLIGHTS */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Tour Packages in India</h2>
-          <p>We provide the best-in-class travel experience for you.</p>
+          <h2>Best Tours and Travels in Indore</h2>
+          <p>Your one-stop destination for premium tour packages and travel services.</p>
         </div>
         <motion.div
           className="highlights-grid"
@@ -103,8 +103,8 @@ const Home = () => {
       {/* 4. CAR FLEET PREVIEW */}
       <section className="section-padding container">
         <div className="section-header text-center">
-          <h2>Our Tour Packages</h2>
-          <p className="sub-heading">Premium vehicles and curated experiences for every journey</p>
+          <h2>Your Trusted Travel Agent in Indore</h2>
+          <p className="sub-heading">Premium fleet including taxi, luxury cars, and Tempo Traveller in Indore</p>
         </div>
         <div className="fleet-carousel">
           {cars.map(car => (

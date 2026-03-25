@@ -48,14 +48,14 @@ const CarGallery = () => {
   return (
     <div className="gallery-page">
       <SEO
-        title="Our Premium Fleet | Sandeep Tours & Holidays"
-        description="View our wide range of premium vehicles, including luxury sedans, SUVs, and tempo travellers. Perfect for all your travel requirements in India."
-        keywords="car gallery, luxury cars, travel fleet, hire SUV, sedan for rent, travel agency cars"
+        title="Tempo Traveller in Indore & Premium Fleet | Sandeep Tours"
+        description="Explore our wide range of vehicles including premium tempo traveller in Indore. Best travel agent in Indore for luxury car rentals and group tours."
+        keywords="tempo traveller in Indore, car hire Indore, luxury car rental Indore, travel agent in Indore, Sandeep Tours fleet"
       />
       <div className="container section-padding">
         <div className="gallery-header animate-fade-in">
-          <h1>Our Premium Fleet</h1>
-          <p>Handpicked vehicles for ultimate comfort and safety.</p>
+          <h1>Our Premium Fleet & Tempo Traveller in Indore</h1>
+          <p>Handpicked vehicles for ultimate comfort, safety, and group travel in Indore.</p>
         </div>
 
         <div className="fleet-grid">

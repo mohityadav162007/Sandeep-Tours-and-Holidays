@@ -3,6 +3,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import { Car, Map, CheckCircle, ArrowLeft, Send, Users, Calendar, Clock, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../components/SEO';
 import './Booking.css';
 
 const Booking = () => {
@@ -81,6 +82,11 @@ const Booking = () => {
 
   return (
     <div className="booking-page-container">
+      <SEO
+        title="Quick Booking | Travel Agent in Indore | Sandeep Tours"
+        description="Book your taxi or tour package instantly with the most reliable travel agent in Indore. Premium car rental and tempo traveller in Indore."
+        keywords="book taxi Indore, tempo traveller booking Indore, tour booking, Sandeep Tours booking"
+      />
       <div className="container">
         <motion.div
           className="booking-card-main glass"

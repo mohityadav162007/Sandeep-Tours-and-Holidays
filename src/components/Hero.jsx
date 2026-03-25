@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-content container animate-fade-in">
-                <h1 className="hero-title">Best Tour Packages in India | Sandeep Tours & Holidays</h1>
+                <h1 className="hero-title">Best Tours and Travels in Indore | Sandeep Tours & Holidays</h1>
                 <p className="hero-subtitle">Local • Outstation • Tour Packages</p>
                 <div className="hero-buttons">
                     <a
