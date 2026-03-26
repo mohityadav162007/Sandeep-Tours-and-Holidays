@@ -50,7 +50,7 @@ const Home = () => {
           "@type": "TravelAgency",
           "name": "Sandeep Tours and Holidays",
           "url": "https://sandeeptoursandholidays.xyz/",
-          "telephone": "+91 9111961561",
+          "telephone": "+91 7725844722, +91 9111961561",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Vijay Nagar",
@@ -122,7 +122,7 @@ const Home = () => {
               <div className="fleet-body-new">
                 <p className="fleet-desc-new">{car.description || "Enjoy a premium and comfortable ride with our top-class vehicles."}</p>
                 <a
-                  href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name}. Please provide details.`)}`}
+                  href={`https://wa.me/917725844722?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name}. Please provide details.`)}`}
                   className="enquire-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -186,7 +186,7 @@ const Home = () => {
                   </div>
                   <p className="tour-desc-new">{tour.description}</p>
                   <a
-                    href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
+                    href={`https://wa.me/917725844722?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
                     className="enquire-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -262,7 +262,7 @@ const Home = () => {
           <p>Book your premium cab now and experience the difference with Sandeep Tours & Holidays.</p>
           <div className="flex-center gap-16 wrap">
             <a
-              href={`https://wa.me/9111961561?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
+              href={`https://wa.me/917725844722?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
               className="btn-accent btn-lg"
               target="_blank"
               rel="noopener noreferrer"

@@ -25,8 +25,8 @@ const Footer = () => {
                 <div className="footer-contact">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li><Phone size={16} /> +91 9111961561</li>
-                        <li><MessageCircle size={16} /> +91 9111961561</li>
+                        <li><Phone size={16} /> +91 7725844722, +91 9111961561</li>
+                        <li><MessageCircle size={16} /> +91 7725844722, +91 9111961561</li>
                         <li><Mail size={16} /> info@sandeeptoursandholidays.xyz</li>
                         <li><MapPin size={16} /> Vijay Nagar, Indore</li>
                     </ul>

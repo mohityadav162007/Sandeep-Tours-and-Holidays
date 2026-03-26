@@ -90,7 +90,7 @@ const CarGallery = () => {
 
                 <div className="flex-between mt-20">
                   <a
-                    href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name} from the gallery. Please provide details.`)}`}
+                    href={`https://wa.me/917725844722?text=${encodeURIComponent(`Hi, I am interested in booking ${car.name} from the gallery. Please provide details.`)}`}
                     className="btn-primary btn-small"
                     target="_blank"
                     rel="noopener noreferrer"

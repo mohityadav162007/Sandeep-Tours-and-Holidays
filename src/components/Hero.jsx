@@ -42,7 +42,7 @@ const Hero = () => {
                 <p className="hero-subtitle">Local • Outstation • Tour Packages</p>
                 <div className="hero-buttons">
                     <a
-                        href={`https://wa.me/9111961561?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
+                        href={`https://wa.me/917725844722?text=${encodeURIComponent("Hi, I want to book a cab.")}`}
                         className="btn-glass btn-primary"
                         target="_blank"
                         rel="noopener noreferrer"

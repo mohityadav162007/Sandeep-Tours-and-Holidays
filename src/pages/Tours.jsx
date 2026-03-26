@@ -49,7 +49,7 @@ const Tours = () => {
                 </div>
 
                 <a
-                  href={`https://wa.me/919111961561?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
+                  href={`https://wa.me/917725844722?text=${encodeURIComponent(`Hi, I am interested in booking the tour: ${tour.name}. Please provide details.`)}`}
                   className="btn-primary-underlined-link"
                   target="_blank"
                   rel="noopener noreferrer"

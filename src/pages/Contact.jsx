@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, title: 'Call Us', value: '+91 9111961561', link: 'tel:+919111961561' },
+    { icon: Phone, title: 'Call Us', value: '+91 7725844722, +91 9111961561', link: 'tel:+919111961561' },
     { icon: Mail, title: 'Email', value: 'info@sandeeptoursandholidays.xyz', link: 'mailto:info@sandeeptoursandholidays.xyz' },
     { icon: MapPin, title: 'Office', value: 'Vijay Nagar, Indore', link: null }
   ];
@@ -57,7 +57,7 @@ const Contact = () => {
             ))}
 
             {/* WhatsApp CTA Card */}
-            <a href="https://wa.me/919111961561?text=Hi, I want to book a cab." className="whatsapp-cta-card">
+            <a href="https://wa.me/917725844722?text=Hi, I want to book a cab." className="whatsapp-cta-card">
               <div className="whatsapp-icon-wrap">
                 <MessageCircle size={28} />
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                 </div>
                 <div className="form-group-contact">
                   <label>Phone Number *</label>
-                  <input type="tel" name="phone" required value={formData.phone} onChange={handleInputChange} placeholder="+91 9111961561" />
+                  <input type="tel" name="phone" required value={formData.phone} onChange={handleInputChange} placeholder="+91 7725844722" />
                 </div>
                 <div className="form-group-contact">
                   <label>Email Address</label>

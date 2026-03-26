@@ -3,7 +3,7 @@ import { Phone, MessageCircle } from 'lucide-react';
 import './FloatingCTA.css';
 
 const FloatingCTA = () => {
-    const whatsappNumber = "+919111961561";
+    const whatsappNumber = "+917725844722";
     const phoneNumber = "+919111961561";
     const message = encodeURIComponent("Hi, I want to book a cab.");
 
